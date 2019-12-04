@@ -1,0 +1,209 @@
+/*----------------------------
+  Pierluca Corti - chi sono
+              per
+       start2impact.it
+----------------------------*/
+
+
+/*------------------------
+ variabili & importazioni
+------------------------*/
+:root{
+  --main-color: #CD1919;
+  --secondary-color: #ededed;
+  --border-color: #a1a1a1;
+}
+@font-face {
+  font-family: title;
+  src: url(../font/Hardpixel.otf);
+}
+@font-face {
+  font-family: text;
+  src: url(../font/ARCADECLASSIC.ttf);
+}
+/*------------------------
+  informazioni  generali
+------------------------*/
+html body{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+p{
+  font-family: text;
+  font-size: 20px;
+  text-align: justify;
+}
+h2{
+  font-family: title;
+  font-size: 35px;
+  text-align: justify;
+}
+p b{
+  color: var(--main-color);
+  font-family: text;
+}
+p a{
+  text-decoration: underline;
+  font-family: text;
+}
+p a:hover{
+  text-decoration: none;
+  font-family: text;
+}
+a{
+  color: var(--main-color);
+}
+/*------------------------
+          header
+------------------------*/
+header{
+  position: sticky;
+  top: 0;
+  background-color: var(--main-color);
+  font-family: title;
+  z-index: 20;
+}
+div.header{
+  text-align: center;
+  padding: 1px;
+  z-index: 20;
+}
+div.header h1{
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 4px 4px 0 black;
+}
+/*------------------------
+      main-contenuto
+------------------------*/
+/*------------------------
+       intestazione
+------------------------*/
+div.contenuto{
+  margin: auto;
+  max-width: 100%;
+  min-width: 400px;
+  height: 200px;
+}
+@mixin cerchio($diametro, $sfondo){
+	width: $diametro;
+	height: $diametro;
+	border-radius: $diametro/2;
+	background: $sfondo;
+}
+.cerchio{
+	@include cerchio(100px, orange);
+}
+.cerchio{
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	background: var(--border-color);
+  float: left;
+  z-index: -20;
+  overflow: hidden;
+  margin-left: 14.5%;
+}
+img.profilo{
+  width: 160px;
+  height: auto;
+  left: -10px;
+  position: relative;
+}
+div.social{
+  height: 70px;
+  width: 200px;
+  margin-top: 35px;
+  float: left;
+  margin-left: 15%;
+}
+img.social-image{
+  width: 34.5%;
+  height: auto;
+  margin-left: 30%
+}
+div#hormenu{
+	width: auto;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+div#hormenu ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+div#hormenu li{
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+div#hormenu li ul{
+	display: none;
+}
+div#hormenu li:hover ul{
+	display: block;
+	width: auto;
+	padding: 0;
+	margin: 0 0 0 -1px;
+}
+ul.posizionamento{
+  left: -35px;
+  float: right;
+  position: relative;
+  font-family: text;
+  font-size: 25px;
+}
+ul.posizionamento2{
+  float: right;
+  position: relative;
+  font-family: text;
+  font-size: 19px;
+}
+/*------------------------
+         articoli
+------------------------*/
+div.contenuto2{
+  margin: auto;
+  width: 100%;
+  min-height: 500px;
+  max-height: 1000px;
+}
+article{
+  padding: 0;
+  margin: 10px;
+}
+.article{
+  margin-top: 30px
+}
+div.in-article{
+  max-width: 500px;
+  height: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 400px;
+  margin: 10px;
+  margin-left: 3%;
+  float: left;
+  border: solid 2px var(--border-color);
+  background-color: var(--secondary-color);
+}
+div.spada{
+  width: 130px;
+  height: 450px;
+  float: left;
+  margin-top: 12px;
+}
+img.sword{
+  transform: rotate(-45deg);
+  top: 100px;
+  left: -55px;
+  position: relative;
+  width: 280px;
+  height: auto;
+  z-index: 2;
+}
+/*------------------------
+           fine
+------------------------*/
